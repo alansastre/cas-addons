@@ -195,25 +195,18 @@
                 </execution>
             </executions>
         </plugin>
-        <plugin>
+	<plugin>
 	    <groupId>org.pitest</groupId>
 	    <artifactId>pitest-maven</artifactId>
-	    <version>0.4</version>
-				<executions>
-					<execution>
-						<id>verify</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>check</goal>
-						</goals>
-						<configuration>
-							<dependencyDefinition>
-								show allResults
-								check absenceOfPackageCycles &gt; 3 in org.pitest.*
-							</dependencyDefinition>
-						</configuration>
-					</execution>
-				</executions>
+	    <version>1.1.4</version>
+	    <configuration>
+	        <targetClasses>
+	            <param>${basedir}/src/main/java/unicon/</param>
+	        </targetClasses>
+	        <targetTests>
+	            <param>${basedir}/src/test/</param>
+	        </targetTests>
+	    </configuration>
 	</plugin>
         
         
