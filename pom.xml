@@ -208,6 +208,11 @@
 	        <targetTests>
 	            <param>${basedir}/src/test/</param>
 	        </targetTests>
+	        <failWhenNoMutations>false</failWhenNoMutations>
+	            <outputFormats>
+	                <outputFormat>XML</outputFormat>
+	                <outputFormat>HTML</outputFormat>                      
+	            </outputFormats>   
 	    </configuration>
 	</plugin>
         
