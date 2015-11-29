@@ -214,6 +214,13 @@
 	                <outputFormat>HTML</outputFormat>                      
 	            </outputFormats>   
 	    </configuration>
+            <reportSets>
+                <reportSet>
+                    <reports>
+                        <report>report</report>
+                    </reports>
+                </reportSet>
+            </reportSets>
 	</plugin>
         
         
