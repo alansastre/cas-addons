@@ -202,14 +202,9 @@
 	    <artifactId>pitest-maven</artifactId>
 	    <version>1.1.4</version>
 	    <configuration>
-	    	<reportsDirectory>${basedir}/pit-custom-output-dir</reportsDirectory>
 	        <targetClasses>
-	            <param>${basedir}/src/main/java/unicon/</param>
+	            <param>com.src.main*</param>
 	        </targetClasses>
-	        <targetTests>
-	            <param>${basedir}/src/test/</param>
-	        </targetTests>
-	        <failWhenNoMutations>false</failWhenNoMutations>
 	            <outputFormats>
 	                <outputFormat>XML</outputFormat>
 	                <outputFormat>HTML</outputFormat>                      
